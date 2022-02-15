@@ -51,11 +51,7 @@ function markCell() {
     board[row][col] = currentPlayer;
     this.innerText = currentPlayer;
 
-    if(currentPlayer == playerO){   //it changes the player once their turn is done
-        currentPlayer = playerX;
-    } else {
-        currentPlayer = playerO;
-    }
+    changePlayer();
     checkWinner();   //checks for winner
 }
 
@@ -63,12 +59,16 @@ function checkWinner() {
 
     for(let row = 0; row < 3; row++){   //to check if a row has same symbol in all the 3 cells
         if(board[row][0] == board[row][1] && board[row][1] == board[row][2] && board[row][0] != ' '){
-            for(let i = 0; i < 3; i++){  //applies winner style to the winning tiles
+                        for(let i = 0; i < 3; i++){  //applies winner style to the winning tiles
                 let cell = document.getElementById(row.toString() + "-" + i.toString());  
                 cell.classList.add("winner");
             }
             gameOver = true;
-            return;
+            if(board[row][0] == 'O'){
+            alert(`PlayerO won the Game!`);
+            } else {
+                alert(`PlayerX won the Game!`);
+            }
         }
     }
 
@@ -79,7 +79,11 @@ function checkWinner() {
                 cell.classList.add("winner");
             }
             gameOver = true;
-            return;
+            if(board[0][col] == 'O'){
+                alert(`PlayerO won the Game!`);
+                } else {
+                    alert(`PlayerX won the Game!`);
+                }
         }
     }
     
@@ -90,7 +94,11 @@ function checkWinner() {
             cell.classList.add("winner");
         }
         gameOver = true;
-        return;
+        if(board[0][0] == 'O'){
+            alert(`PlayerO won the Game!`);
+            } else {
+                alert(`PlayerX won the Game!`);
+            }
     }
 
     //checks if all symbols are same anti-diagonally
@@ -107,7 +115,24 @@ function checkWinner() {
         cell.classList.add("winner");
 
         gameOver = true;
-        return;
+        if(board[0][2] == 'O'){
+            alert(`PlayerO won the Game!`);
+            } else {
+                alert(`PlayerX won the Game!`);
+            }
     }
 }
 
+
+function replay() {
+
+}
+
+function changePlayer() {
+    if(currentPlayer == playerO){   //it changes the player once their turn is done
+        currentPlayer = playerX;
+    } else {
+        currentPlayer = playerO;
+    }
+    return currentPlayer;
+}
