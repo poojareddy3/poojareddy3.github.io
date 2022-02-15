@@ -1,0 +1,38 @@
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #56baed
+}
+h2{
+    text-align: center;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    background-color:#fff;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 147px;;
+    height: 147px;
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-lines {
+    border-bottom: 3px solid #56baed;
+}
+
+.vertical-lines {
+    border-right: 3px solid #56baed;
+}
+
+.winner {
+    background-color: #fff;
+    color: darkblue;
+}
