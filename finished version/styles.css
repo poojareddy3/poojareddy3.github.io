@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-color: #134863;
+    height: 100vh;
+    padding-top: 1px;
+}
+.title {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 35px;
+}
+.turns {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.hide {
+    display: none;
+}
+.turns span {
+    font-size: larger;
+}
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    max-width: 330px;
+    border-radius: 6px;
+    background-color: #fff;
+    border: none;
+}
+.cell {
+    border: 3px solid #134863;
+    min-width: 107px;
+    min-height: 107px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 110px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.playerX {
+    color: rgb(219, 57, 138);
+    font-weight: 700; 
+}
+.playerO {
+    color: rgb(18, 161, 161);
+    font-weight: 700;
+}
+.newGame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+.newGame button {
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+#reset {
+    background-color: #fff;
+    color: #134863;
+    width: 100px;
+    font-weight: 800;
+    font-size: larger;
+
+}
