@@ -8,8 +8,8 @@ Tic Tac Toe is a two-player game where the goal of each user is to mark their tu
 
 ## Links:
 
-Click ok the below link to play the game.
--[https://heuristic-cori-2d9c36.netlify.app](url)
+Click ok the link to play the game.
+[https://heuristic-cori-2d9c36.netlify.app](url)
 
 ## Technologies:
 
