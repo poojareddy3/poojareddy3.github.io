@@ -24,7 +24,7 @@ Open the index.html file in any web browser and you’ll be good to go.
 ![gamewinpage](https://user-images.githubusercontent.com/97912033/154398161-08d4e6e3-45f4-4806-92ad-fa64818226a5.jpg)
 
 
-I## Improvements to be made
+## Improvements to be made
 
 - Play against the computer.
 - Allows the player to choose whether to play as X or O.
