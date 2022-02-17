@@ -26,5 +26,5 @@ Open the index.html file in any web browser and you’ll be good to go.
 
 ## Improvements to be made
 
--•	Play against the computer.
--•	Allows the player to choose whether to play as X or O.
+-	Play against the computer.
+- Allows the player to choose whether to play as X or O.
