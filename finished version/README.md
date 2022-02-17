@@ -9,7 +9,7 @@ Tic Tac Toe is a two-player game where the goal of each user is to mark their tu
 ## Links:
 
 Click ok the below link to play the game.
-[https://heuristic-cori-2d9c36.netlify.app](url)
+-[https://heuristic-cori-2d9c36.netlify.app](url)
 
 ## Technologies:
 
@@ -27,4 +27,4 @@ Open the index.html file in any web browser and you’ll be good to go.
 ## Improvements to be made:
 
 •	Play against the computer.
-•	Allows the player to choose whether to play as X or O.
+-•	Allows the player to choose whether to play as X or O.
